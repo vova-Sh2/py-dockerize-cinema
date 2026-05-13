@@ -1,9 +1,9 @@
 FROM python:3.13.13-alpine3.23
 LABEL maintainer="vovakucin082@gmail.com"
 
-ENV PYTHOUNNBUFFERED 1
+ENV PYTHONUNBUFFERED 1
 
-WORKDIR app/
+WORKDIR /app
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
